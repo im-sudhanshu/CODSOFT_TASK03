@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Expense Tracker</h1>
+
+    <div class="summary">
+      <div class="card income"><span>Income</span><p id="totalIncome">₹0</p></div>
+      <div class="card expense"><span>Expenses</span><p id="totalExpense">₹0</p></div>
+      <div class="card balance"><span>Balance</span><p id="balance">₹0</p></div>
+    </div>
+
+    <form id="txForm">
+      <input id="desc" placeholder="Description" autocomplete="off">
+      <input id="amount" type="number" placeholder="Amount" step="0.01">
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <select id="category">
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Bills</option>
+        <option>Shopping</option>
+        <option>Salary</option>
+        <option>Other</option>
+      </select>
+      <button id="submitBtn">Add</button>
+    </form>
+    <p id="error"></p>
+
+    <div class="tools">
+      <label>Filter category:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Bills</option>
+        <option>Shopping</option>
+        <option>Salary</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <ul id="txList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
