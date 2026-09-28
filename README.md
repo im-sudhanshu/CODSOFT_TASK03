@@ -8,11 +8,11 @@ A personal finance tracker built with vanilla HTML, CSS, and JavaScript...
 - Add tasks with validation (no empty tasks, max 100 characters)
 - Edit existing tasks
 - Delete tasks
-- Mark tasks as completed or pending (click the task text)
+- Mark tasks as income or expense (click the task text)
+- Add discription and amount
 - Persistent storage using Local Storage
-- Live count of completed and pending tasks
-- Search by task text
-- Filter by All, Pending, or Completed
+- Live count of total income, expence and balance
+- Filter by category
 - Responsive layout for desktop and mobile
 
 ## Tech Stack
